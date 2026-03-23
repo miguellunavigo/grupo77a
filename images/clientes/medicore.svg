@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="64" viewBox="0 0 200 64" role="img" aria-label="MediCore">
+  <path d="M20 44V20h6l8 14 8-14h6v24h-5V30l-7 14h-4l-7-14v14z" fill="#0d3b66"/>
+  <text x="58" y="40" fill="#1a5a8a" font-family="system-ui,sans-serif" font-size="18" font-weight="800">MediCore</text>
+</svg>

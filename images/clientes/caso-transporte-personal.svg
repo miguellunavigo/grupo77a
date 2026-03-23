@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-label="Transporte de personal  imagen ilustrativa">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2e8f0"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="420" fill="url(#sky)"/>
+  <rect x="0" y="280" width="900" height="140" fill="#cbd5e1"/>
+  <rect x="120" y="200" width="520" height="120" rx="12" fill="#0d3b66"/>
+  <rect x="140" y="218" width="88" height="84" rx="6" fill="#1a5a8a"/>
+  <rect x="250" y="218" width="88" height="84" rx="6" fill="#1a5a8a"/>
+  <rect x="360" y="218" width="88" height="84" rx="6" fill="#1a5a8a"/>
+  <rect x="470" y="218" width="88" height="84" rx="6" fill="#1a5a8a"/>
+  <circle cx="720" cy="320" r="48" fill="#c9a227" opacity="0.9"/>
+  <text x="450" y="120" text-anchor="middle" fill="#0d3b66" font-family="system-ui,sans-serif" font-size="28" font-weight="800">Rutas corporativas planificadas</text>
+  <text x="450" y="155" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="16">Sustituya esta imagen por una foto real de su flota o operaci�n</text>
+</svg>

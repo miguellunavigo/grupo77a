@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img" aria-label="Retrato Carlos Vega">
+  <defs>
+    <linearGradient id="bg2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a5a8a"/>
+      <stop offset="1" stop-color="#0a1628"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" fill="url(#bg2)"/>
+  <circle cx="240" cy="175" r="72" fill="rgba(201,162,39,0.25)"/>
+  <ellipse cx="240" cy="360" rx="140" ry="100" fill="rgba(255,255,255,0.08)"/>
+  <text x="240" y="255" text-anchor="middle" fill="#c9a227" font-family="system-ui,sans-serif" font-size="56" font-weight="800">CV</text>
+</svg>
