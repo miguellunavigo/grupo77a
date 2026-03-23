@@ -111,6 +111,34 @@ h3,
   color: #4dff9a;
 }
 
+/* Redes en barra superior (referencia tipo Elsaru: iconos visibles junto al contacto) */
+.top-bar__social {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.top-bar__social-link {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.top-bar__social-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
 .navbar-main {
   backdrop-filter: saturate(180%) blur(12px);
   background: rgba(18, 52, 96, 0.97) !important;
@@ -136,26 +164,42 @@ h3,
 .splide--hero-gallery {
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 16px 48px rgba(12, 30, 55, 0.14);
+  box-shadow: 0 12px 36px rgba(12, 30, 55, 0.12);
   background: #0c1e33;
 }
 
-.splide--servicio .splide__slide img,
-.splide--hero-gallery .splide__slide img {
+/* Galerías de servicio: altura acotada (antes dominaban demasiado el scroll) */
+.splide--servicio .splide__slide img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 220px;
   object-fit: cover;
   display: block;
 }
 
+@media (min-width: 576px) {
+  .splide--servicio .splide__slide img {
+    height: 240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .splide--servicio .splide__slide img {
+    height: 260px;
+  }
+}
+
 .splide--hero-gallery .splide__slide img {
-  aspect-ratio: 21 / 9;
-  min-height: 200px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 360px;
+  min-height: 180px;
+  object-fit: cover;
+  display: block;
 }
 
 @media (max-width: 767.98px) {
   .splide--hero-gallery .splide__slide img {
-    aspect-ratio: 16 / 10;
+    max-height: 280px;
   }
 }
 
@@ -176,16 +220,66 @@ h3,
   fill: var(--vm-primary) !important;
 }
 
+/* Carrusel choferes — retratos uniformes */
+.splide--choferes {
+  border-radius: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.splide--choferes .chofer-slide {
+  border-radius: 0.85rem;
+  overflow: hidden;
+  background: #e8edf3;
+  box-shadow: 0 10px 32px rgba(12, 30, 55, 0.1);
+  height: 100%;
+}
+
+.splide--choferes .chofer-slide img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .splide--choferes .chofer-slide img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .splide--choferes .chofer-slide img {
+    height: 320px;
+  }
+}
+
 .service-showcase {
   scroll-margin-top: 96px;
 }
 
 .service-showcase__label {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--vm-accent);
+}
+
+.service-showcase p.lead,
+.service-showcase p.text-muted {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.service-showcase__bullets {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.page-header .lead {
+  font-size: 1.125rem;
+  line-height: 1.55;
 }
 
 /* .navbar legacy: usar .navbar-main */
@@ -753,6 +847,18 @@ h3,
 .section-sub {
   color: var(--vm-muted);
   max-width: 36rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Tarjetas “Movilidades”: títulos más legibles */
+.movilidad-card .card-body h3 {
+  font-size: 1.05rem;
+}
+
+.movilidad-card .card-body p {
+  font-size: 0.9375rem;
+  line-height: 1.5;
 }
 
 .bg-soft {

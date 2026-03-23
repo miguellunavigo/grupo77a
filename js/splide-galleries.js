@@ -33,8 +33,32 @@
     new Splide(root, common).mount();
   });
 
-  var home = document.getElementById("splide-home");
-  if (home) {
-    new Splide(home, Object.assign({}, common, { interval: 5000 })).mount();
+  var choferes = document.getElementById("splide-choferes");
+  if (choferes) {
+    new Splide(choferes, {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      gap: "1rem",
+      autoplay: !reduceMotion,
+      interval: 3800,
+      pauseOnHover: true,
+      pauseOnFocus: true,
+      speed: 600,
+      arrows: true,
+      pagination: true,
+      easing: "cubic-bezier(0.25, 1, 0.5, 1)",
+      mediaQuery: "min",
+      breakpoints: {
+        576: {
+          perPage: 2,
+          gap: "1rem",
+        },
+        992: {
+          perPage: 3,
+          gap: "1.25rem",
+        },
+      },
+    }).mount();
   }
 })();

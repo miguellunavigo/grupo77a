@@ -1,0 +1,11 @@
+{
+  "name": "grupo77a",
+  "private": true,
+  "scripts": {
+    "start": "serve . -l 51344",
+    "dev": "serve . -l 51344"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
